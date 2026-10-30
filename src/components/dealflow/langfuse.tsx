@@ -105,7 +105,9 @@ export function LangfusePanel() {
         {log.length === 0 ? (
           <div>
             <p className="px-3 py-3 text-sm text-ink-soft">
-              Cloud delivery needs server keys. Until then this replay is local. It is the same nine golden hops the engine just scored. None of these rows were sent to Langfuse cloud.
+              {status?.configured
+                ? "These nine rows are the live engine, scored in this browser. They are not in Langfuse until you trace the labeled set."
+                : "Cloud delivery needs server keys. Until then this replay is local. It is the same nine golden hops the engine just scored. None of these rows were sent to Langfuse cloud."}
             </p>
             <div className="overflow-x-auto">
               <table className="w-full min-w-max text-left text-sm">
