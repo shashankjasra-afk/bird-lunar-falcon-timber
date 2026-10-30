@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homework 3 Review · Session 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ffffff; --bg2: #f6f7f9; --fg: #111111; --fg2: #555555;
+  --accent: #2563eb; --accent-soft: #eaf1fe; --warn: #b45309; --warn-soft: #fef3e2;
+  --good: #047857; --good-soft: #e7f6f0; --line: #e4e6ea;
+  --font-body: 'Inter', system-ui, sans-serif; --font-heading: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; background: var(--bg); color: var(--fg); font-family: var(--font-body); }
+#deck { height: 100vh; width: 100vw; overflow: hidden; cursor: pointer; }
+.slide {
+  display: none; height: 100vh; width: 100vw; padding: 7vh 8vw;
+  flex-direction: column; justify-content: center; gap: 3vh;
+  animation: fadein 0.25s ease;
+}
+.slide.active { display: flex; }
+@keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.kicker { font-size: clamp(12px, 1.3vw, 18px); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+h1 { font-size: clamp(36px, 5.6vw, 84px); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+h2 { font-size: clamp(28px, 3.8vw, 58px); font-weight: 800; line-height: 1.1; letter-spacing: -0.015em; }
+p.lead { font-size: clamp(18px, 1.9vw, 28px); color: var(--fg2); line-height: 1.45; max-width: 60ch; }
+.sub { font-size: clamp(14px, 1.4vw, 20px); color: var(--fg2); }
+
+/* Title */
+.slide[data-layout="title"] { background: var(--bg2); align-items: flex-start; }
+.slide[data-layout="title"] h1 span { color: var(--accent); }
+
+/* Stats */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2vw; }
+.stat { background: var(--bg2); border-radius: 16px; padding: 3vh 1.6vw; }
+.stat .n { font-size: clamp(40px, 6vw, 92px); font-weight: 800; line-height: 1; color: var(--accent); }
+.stat .l { margin-top: 1.2vh; font-size: clamp(14px, 1.4vw, 20px); color: var(--fg2); line-height: 1.35; }
+.stat.warn .n { color: var(--warn); }
+
+/* Code */
+pre { font-family: var(--mono); font-size: clamp(13px, 1.35vw, 20px); line-height: 1.6; background: #0f1117; color: #e8eaf0; padding: 3vh 2.4vw; border-radius: 14px; white-space: pre-wrap; }
+pre .comment { color: #8892a4; }
+pre .err { color: #fca5a5; }
+pre .key { color: #93c5fd; }
+
+/* Two column */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3vw; align-items: stretch; }
+.card { border: 1px solid var(--line); border-radius: 16px; padding: 3vh 2vw; display: flex; flex-direction: column; gap: 1.6vh; }
+.card h3 { font-size: clamp(18px, 2vw, 30px); font-weight: 700; }
+.card p, .card li { font-size: clamp(15px, 1.55vw, 23px); color: var(--fg2); line-height: 1.45; }
+.card ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 1vh; }
+.card.good { background: var(--good-soft); border-color: transparent; }
+.card.good h3 { color: var(--good); }
+.card.warn { background: var(--warn-soft); border-color: transparent; }
+.card.warn h3 { color: var(--warn); }
+.tag { display: inline-block; font-size: clamp(11px, 1.1vw, 15px); font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); align-self: flex-start; }
+
+/* Flow (chat transcript) */
+.flow { display: flex; flex-direction: column; gap: 1.6vh; max-width: 70ch; }
+.msg { font-size: clamp(16px, 1.7vw, 25px); line-height: 1.4; padding: 1.4vh 1.4vw; border-radius: 12px; max-width: 85%; }
+.msg.user { background: var(--accent); color: #fff; align-self: flex-end; }
+.msg.bot { background: var(--bg2); color: var(--fg); align-self: flex-start; }
+.msg.bad { border-left: 4px solid var(--warn); }
+
+/* Quote */
+.slide[data-layout="quote"] blockquote { font-size: clamp(26px, 3.4vw, 50px); font-weight: 700; line-height: 1.2; max-width: 26ch; letter-spacing: -0.01em; }
+.slide[data-layout="quote"] blockquote::before { content: "“"; color: var(--accent); }
+.slide[data-layout="quote"] blockquote::after { content: "”"; color: var(--accent); }
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2vw; }
+.q { background: var(--bg2); border-radius: 16px; padding: 3vh 1.6vw; display: flex; flex-direction: column; gap: 1.6vh; }
+.q .t { font-size: clamp(16px, 1.75vw, 26px); font-weight: 600; line-height: 1.35; }
+.q .w { font-size: clamp(13px, 1.25vw, 18px); color: var(--fg2); }
+.q .w b { color: var(--accent); }
+
+.shot { margin:0; display:flex; flex-direction:column; gap:1vh; }
+.shot img { max-height: 60vh; max-width: 38vw; border-radius: 14px; border: 1px solid var(--line); box-shadow: 0 6px 24px rgba(0,0,0,.12); }
+.shot figcaption { font-size: clamp(12px,1.1vw,15px); color: var(--fg2); }
+.venn-row { display:grid; grid-template-columns: 1.35fr 1fr; gap: 3vw; align-items:center; }
+.venn-wrap { display:flex; flex-direction:column; gap:1vh; }
+.venn { width:100%; max-height:58vh; }
+.venn .c1 { fill: rgba(37,99,235,.10); stroke: var(--accent); stroke-width: 2; }
+.venn .c2 { fill: rgba(217,119,6,.12); stroke: #d97706; stroke-width: 2; }
+.venn .vn { font: 500 20px var(--font-body); fill: var(--fg); }
+.venn .vh { font: 700 18px var(--font-body); fill: var(--fg2); letter-spacing: .02em; }
+.venn .vh1 { fill: var(--accent); } .venn .vh2 { fill: #b45309; }
+.venn .vc { font: 800 30px var(--font-body); fill: var(--fg2); opacity: .55; }
+.stats2 { grid-template-columns: 1fr 1fr; gap: 1.2vw; }
+.stats2 .stat { padding: 2vh 1.2vw; }
+.stats2 .stat .n { font-size: clamp(30px, 3.6vw, 56px); }
+.stats2 .stat .l { font-size: clamp(12px, 1.1vw, 16px); }
+@media (max-width: 800px) { .venn-row { grid-template-columns: 1fr; } }
+/* Bullets */
+ol.big, ul.big { font-size: clamp(20px, 2.3vw, 34px); line-height: 1.4; padding-left: 1.3em; display: flex; flex-direction: column; gap: 2vh; }
+ol.big li::marker { color: var(--accent); font-weight: 800; }
+
+.presenter { display: inline-flex; align-items: center; gap: 10px; font-size: clamp(14px, 1.4vw, 20px); font-weight: 600; background: var(--accent-soft); color: var(--accent); padding: 8px 16px; border-radius: 999px; align-self: flex-start; }
+.presenter::before { content: "🎤"; }
+
+#counter { position: fixed; bottom: 18px; right: 24px; font-size: 13px; color: var(--fg2); opacity: .6; font-variant-numeric: tabular-nums; }
+#nav { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; opacity: .25; transition: opacity .2s; }
+#nav:hover { opacity: 1; }
+#nav button { border: 1px solid var(--line); background: var(--bg); color: var(--fg); width: 40px; height: 32px; border-radius: 8px; font-size: 16px; cursor: pointer; }
+
+@media (max-width: 800px) {
+  .stats, .quotes { grid-template-columns: 1fr 1fr; }
+  .cols { grid-template-columns: 1fr; }
+  .slide { padding: 5vh 6vw; overflow-y: auto; justify-content: flex-start; }
+}
+
+.golden { font-family: var(--mono); font-size: clamp(12px,1.2vw,17px); border-collapse: collapse; width:100%; }
+.golden th { text-align:left; color: var(--fg2); font-weight:600; padding: 8px 10px; border-bottom: 2px solid var(--line); font-family: var(--font-body); font-size: clamp(11px,1vw,14px); text-transform: uppercase; letter-spacing:.06em; }
+.golden td { padding: 10px; border-bottom: 1px solid var(--line); }
+.four { display:grid; grid-template-columns: repeat(4,1fr); gap: 1.4vw; }
+.four .card { padding: 2.4vh 1.4vw; }
+.four .card h3 { font-size: clamp(16px,1.7vw,24px); }
+.four .card p { font-size: clamp(13px,1.3vw,19px); }
+.math { font-family: var(--mono); font-size: clamp(13px,1.35vw,20px); line-height:1.7; background: var(--bg2); border-radius: 14px; padding: 2.4vh 2vw; }
+.math b { color: var(--warn); }
+@media (max-width: 800px) { .four { grid-template-columns: 1fr 1fr; } }
+.omr { width: 100%; max-height: 54vh; }
+.omr .paper { fill: #fff; stroke: #d6d9de; stroke-width: 1.5; }
+.omr .ph { font: 600 12px var(--mono); fill: var(--fg2); letter-spacing: .04em; }
+.omr .ql { font: 700 15px var(--font-body); fill: var(--fg); }
+.omr .bub { fill: #fff; stroke: #9aa1ab; stroke-width: 1.4; }
+.omr .bl { font: 600 11px var(--font-body); fill: #9aa1ab; text-anchor: middle; }
+.omr .fill { fill: #1f2937; }
+.omr .overlay { fill: rgba(37,99,235,.10); stroke: var(--accent); stroke-width: 2; stroke-dasharray: 6 4; }
+.omr .fold { fill: rgba(37,99,235,.28); }
+.omr .ring { fill: none; stroke: #dc2626; stroke-width: 3; }
+.omr .ok { font: 800 20px var(--font-body); fill: var(--good); }
+.omr .no { font: 800 20px var(--font-body); fill: #dc2626; }
+.omr .sc { font: 700 14px var(--font-body); fill: var(--fg); }
+.omr .ol { font: 600 13px var(--font-body); fill: var(--accent); }
+.map { display:flex; flex-direction:column; gap: 1.6vh; }
+.map .row { display:grid; grid-template-columns: 1fr 1.25fr; gap: 1vw; align-items: baseline; border-bottom: 1px solid var(--line); padding-bottom: 1.2vh; }
+.map .k { font-size: clamp(14px,1.4vw,20px); color: var(--fg2); }
+.map .v { font-size: clamp(16px,1.6vw,23px); font-weight: 700; color: var(--fg); }
+.dim { border-collapse: collapse; width:100%; font-size: clamp(12px,1.15vw,17px); }
+.dim th { text-align:left; font-size: clamp(10px,.95vw,13px); text-transform: uppercase; letter-spacing:.06em; color: var(--fg2); padding: .8vh .7vw; border-bottom: 2px solid var(--line); }
+.dim td { padding: .9vh .7vw; border-bottom: 1px solid var(--line); color: var(--fg2); line-height: 1.35; }
+.dim td:first-child { color: var(--fg); font-weight: 700; white-space: nowrap; }
+.how { display:inline-block; font-size: .85em; font-weight: 700; padding: 2px 8px; border-radius: 999px; margin-right: 4px; white-space: nowrap; }
+.how.code { background: var(--good-soft); color: var(--good); }
+.how.judge { background: var(--accent-soft); color: var(--accent); }
+.how.human { background: var(--warn-soft); color: var(--warn); }
+.three3 { display:grid; grid-template-columns: repeat(3,1fr); gap: 1.6vw; }
+.card .ex { font-family: var(--mono); font-size: clamp(11px,1.05vw,15px); background: var(--bg2); border-radius: 8px; padding: 1vh .8vw; color: var(--fg); }
+@media (max-width: 800px) { .three3 { grid-template-columns: 1fr; } }
+
+ol.big.big3, ul.big.big3 { font-size: clamp(15px,1.6vw,23px); gap: 1.4vh; }
+.compact .card { padding: 2vh 1.4vw; gap: 1vh; }
+.compact .card p { font-size: clamp(13px,1.35vw,20px); }
+.dim td.n { font-weight: 800; color: var(--accent); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div id="deck" aria-live="polite">
+
+  <!-- 1 -->
+  <div class="slide active" data-layout="title" data-index="0" role="region" aria-label="Slide 1 of 10" aria-current="true">
+    <div class="kicker">Session 3 · Homework 3 review · Capstone Canvas v2</div>
+    <h1>You moved.<br><span>Now make it runnable.</span></h1>
+    <p class="lead">Six team canvases. Real progress on the cheap fixes. The hard part, running your own golden set, hasn't started yet.</p>
+    <div class="stats">
+      <div class="stat"><div class="n">6/6</div><div class="l">listed their team members (Homework 1: 0/7)</div></div>
+      <div class="stat"><div class="n">1</div><div class="l">baseline measured with a stopwatch (Homework 1: none)</div></div>
+      <div class="stat"><div class="n">6/6</div><div class="l">wrote 10+ golden rows with a high-stakes case</div></div>
+      <div class="stat warn"><div class="n">0</div><div class="l">report a pass rate on those rows yet</div></div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="slide" data-layout="two-column" data-index="1" role="region" aria-label="Slide 2 of 10">
+<div class="kicker">Who submitted</div>
+    <h2>Six capstones, six real problems</h2>
+    <table class="dim">
+      <tr><th>Team</th><th>Problem</th><th>Members</th></tr>
+      <tr><td>Security Analyzer</td><td>Find, fix and prove fixes for code security findings</td><td>Anshu · Archana · Bikash</td></tr>
+      <tr><td>DealFlow Agents</td><td>Auto-approve routine CPQ quotes, route exceptions</td><td>Ranjith · Sanjeev · Shashank</td></tr>
+      <tr><td>Magenta</td><td>Steel procurement across construction projects</td><td>Ashutosh · Krishna Prasad · Venkata</td></tr>
+      <tr><td>Agent Mend</td><td>RBI/SEBI circular → affected internal SOPs</td><td>Abhijeet · Eshwari · Pratyusha</td></tr>
+      <tr><td>SoloBiz AI</td><td>Enquiry-to-fulfilment for one-person businesses</td><td>Shobana · Guru Natesh</td></tr>
+      <tr><td>PickWise</td><td>Researched Pinterest affiliate posts, owner-approved</td><td>Aswin · Sushmita · Vinil</td></tr>
+    </table>
+    <p class="sub">Your capstone team isn't in this list? See me at the break. Everyone presents on 31 Oct.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="slide" data-layout="two-column" data-index="2" role="region" aria-label="Slide 3 of 10">
+<div class="kicker">The five asks</div>
+    <h2>What moved, and what didn't</h2>
+    <table class="dim">
+      <tr><th>Homework 3 asked for</th><th>Teams</th><th>What we saw</th></tr>
+      <tr><td>Team members listed</td><td class="n">6/6</td><td>Done. Cheapest fix in the course.</td></tr>
+      <tr><td>A measured baseline, with its source</td><td class="n">1/6</td><td>3 more gave an honest, sourced estimate. 2 still say "measure in the pilot", with no date.</td></tr>
+      <tr><td>Three-sentence test on every agent</td><td class="n">5/6</td><td>3 teams cut agents or turned one into a tool. 1 kept every agent and called them deterministic.</td></tr>
+      <tr><td>10 golden rows, adversarial + high-stakes</td><td class="n">6/6</td><td>All have high-stakes rows. 5 have a real adversarial input. None has been run.</td></tr>
+      <tr><td>Boxes 13–14 as spec lines</td><td class="n">4/6</td><td>Number, reason, cost of a miss. The new slip: claiming "zero" from a test of 20.</td></tr>
+    </table>
+  </div>
+
+  <!-- 4 -->
+  <div class="slide" data-layout="two-column" data-index="3" role="region" aria-label="Slide 4 of 10">
+<div class="kicker">Baselines</div>
+    <h2>A stopwatch beats a benchmark</h2>
+    <div class="cols compact">
+      <div class="card good"><span class="tag">Magenta · measured</span><h3>169 s · 193 s · 144 s</h3><p>Manual supplier selection for 3 projects and 5 suppliers, timed three times by a team member on 22 Oct. Average 168.7 s. Source, method, date: all there.</p></div>
+      <div class="card"><span class="tag">Agent Mend · honest guess</span><h3>"About 2 days. Timed by Thu 29 Oct."</h3><p>Labelled as a guess everywhere it appears, with the exact test that will replace it: three runs, one obligation, 15 policies.</p></div>
+    </div>
+    <div class="cols compact">
+      <div class="card warn"><span class="tag">Security Analyzer · SoloBiz</span><h3>"Measure during the pilot"</h3><p>On every metric. That's a plan without a date, so it isn't a baseline yet.</p></div>
+      <div class="card"><h3>A real baseline can change your pitch</h3><p>If the manual task takes three minutes, time saved won't carry the case. Cost, errors caught or risk might. Measure first, then pick the headline.</p></div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="slide" data-layout="two-column" data-index="4" role="region" aria-label="Slide 5 of 10">
+<div class="kicker">The three-sentence test</div>
+    <h2>Agents that failed made designs better</h2>
+    <div class="three3 compact">
+      <div class="card good"><span class="tag">Agent Mend</span><h3>Checker → <code style="font-family:var(--mono)">check_proof</code></h3><p>"It doesn't plan, pick tools or loop." Now a tool, still on a different model, so the agent never grades its own work.</p></div>
+      <div class="card good"><span class="tag">Magenta</span><h3>One orchestrator, deterministic tools</h3><p>One agent decides when to replan; code does the arithmetic.</p></div>
+      <div class="card good"><span class="tag">SoloBiz</span><h3>11 agents → 5</h3><p>Inventory and fulfilment became database locks and courier APIs. Now test the five left.</p></div>
+    </div>
+    <div class="compact"><div class="card warn"><span class="tag">DealFlow</span><h3>Three agents "pass"; box 15 says "near-zero compute"</h3><p>No model needed means a rules engine. That can be right. Call it one.</p></div></div>
+  </div>
+
+  <!-- 6 -->
+  <div class="slide" data-layout="two-column" data-index="5" role="region" aria-label="Slide 6 of 10">
+<div class="kicker">Golden sets · what good looks like</div>
+    <h2>An answer key a script can check</h2>
+    <div class="cols">
+      <div class="card good"><span class="tag">Security Analyzer · 11 cases</span><h3>Each row is a tiny project</h3><ul>
+        <li><code style="font-family:var(--mono)">src/</code>, <code style="font-family:var(--mono)">tests/</code> and <code style="font-family:var(--mono)">expected.json</code> per case</li>
+        <li>A verifier script that checks every case before any fix</li>
+        <li>Case 04: safe code that looks like SQL injection, to catch false alarms</li>
+        <li>Case 11: the right answer is "stop and ask a person"</li></ul></div>
+      <div class="card good"><span class="tag">SoloBiz · 10 rows in Wren's schema</span><h3>The edge cases your users send</h3><ul>
+        <li>An injection hidden in a delivery note</li>
+        <li>A cropped UPI receipt with no transaction ID</li>
+        <li>Wedding guests' faces in a "feel free to share" photo</li>
+        <li>A Hinglish order that must price exactly like an English one</li></ul></div>
+    </div>
+    <p class="sub">Every team has written one. Nobody has run it yet. That's tonight's Build 4, on your own problem.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="slide" data-layout="two-column" data-index="6" role="region" aria-label="Slide 7 of 10">
+<div class="kicker">Golden sets · four fixes</div>
+    <h2>Make every row gradeable</h2>
+    <div class="four">
+      <div class="card warn"><span class="tag">Magenta · prose, not an answer</span><p>"Evaluate alternatives, explain trade-offs, request approval." Only a judge can grade that. Add the checkable part: which supplier, how many tonnes, what cost, escalate yes or no.</p></div>
+      <div class="card warn"><span class="tag">Magenta · contradicts the data</span><p>Rows 3 and 10: "no single supplier can meet Day 5". The dataset has Prime Steel: 100 t, 2-day lead, and row 2 expects it. Label against the data, or change the data for that row.</p></div>
+      <div class="card warn"><span class="tag">DealFlow · two right answers</span><p>G007: "Escalate (or Approve if threshold low)". A golden row has one answer. Fix the threshold, then the label.</p></div>
+      <div class="card warn"><span class="tag">DealFlow · not adversarial</span><p>G008's quarter-end discount is a gaming signal. Adversarial means input that attacks the agent: instructions hidden in a quote's notes field.</p></div>
+    </div>
+    <p class="sub">Also Magenta: four rows vary the same Project A delay, so they test one thing four times. Spread them across failure types.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="slide" data-layout="two-column" data-index="7" role="region" aria-label="Slide 8 of 10">
+<div class="kicker">Spec lines</div>
+    <h2>Zero is a goal. Twenty tests can't prove it.</h2>
+    <div class="cols compact">
+      <div class="card good"><span class="tag">Agent Mend · box 14</span><h3>Why 9 out of 10?</h3><p>A circular yields 15–20 findings, so at most ~2 misses, few enough for the analyst to catch. A wrong extra flag costs minutes; a miss costs an audit finding.</p></div>
+      <div class="card good"><span class="tag">Security Analyzer · box 14</span><h3>"≤ 5% false fixes", with its own caveat</h3><p>"With about 20 verified fixes, one error already equals 5%, so treat the figure as directional." The team flagged the limit itself.</p></div>
+    </div>
+    <div class="math">Agent Mend box 13: target zero · test: catch at least 19 of 20 planted bad proofs<br>19/20 is 95%, not zero. And 0 misses in 20 still allows a true miss rate up to <b>≈ 3/20 = 15%</b><br>→ state the target as a rate, then grow the test set until it can show it</div>
+    <p class="sub">SoloBiz: thresholds of 95%, 98% and 90% with no reason and no cost of a miss. Those are still guesses, written down.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="slide" data-layout="two-column" data-index="8" role="region" aria-label="Slide 9 of 10">
+<div class="kicker">Still missing · and where tonight fixes it</div>
+    <h2>Three boxes still unfinished</h2>
+    <div class="three3">
+      <div class="card"><span class="tag">Box 15 · Cost · §5</span><h3>0/6 priced from a price card</h3><p>"To be measured" (Security Analyzer), "near-zero compute" (DealFlow), "track cost per scenario" (Magenta). Tonight: tokens × model per step × volume × 3.</p></div>
+      <div class="card"><span class="tag">Box 12 · HITL · §6</span><h3>2 canvases have no SLA yet</h3><p>"Define during pilot" (Security Analyzer). "Don't know yet" (Agent Mend). Set it from what a delay costs: a release date, a circular's deadline, a customer waiting.</p></div>
+      <div class="card"><span class="tag">Box 14 · Judge · §1–§2</span><h3>No judge prompt yet</h3><p>Criteria are listed; none is written as a prompt with numbered, testable checks, or tested against your own labels.</p></div>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="slide" data-layout="two-column" data-index="9" role="region" aria-label="Slide 10 of 10">
+<div class="kicker">Before Sat 31 Oct</div>
+    <h2>Five things, in this order</h2>
+    <ol class="big big3">
+      <li><b>Run your golden set.</b> Bring the pass rate, and the failure you fixed because of it.</li>
+      <li><b>One answer per row,</b> checked against your own data.</li>
+      <li><b>Turn every estimate into a measurement,</b> with a date. Three timed runs is enough.</li>
+      <li><b>Cost from the price card;</b> SLA from the cost of delay.</li>
+      <li><b>One decision per box.</b> PickWise: "illustrative", "unverified", "not a quotation" on most lines. One caveat per box is plenty.</li>
+    </ol>
+  </div>
+
+</div>
+
+<div id="nav">
+  <button onclick="goTo(current-1)" aria-label="Previous slide">&#8592;</button>
+  <button onclick="goTo(current+1)" aria-label="Next slide">&#8594;</button>
+</div>
+<div id="counter">1 / 10</div>
+
+<script>
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+const counter = document.getElementById('counter');
+
+function goTo(n) {
+  slides[current].classList.remove('active');
+  slides[current].removeAttribute('aria-current');
+  current = Math.max(0, Math.min(n, slides.length - 1));
+  slides[current].classList.add('active');
+  slides[current].setAttribute('aria-current', 'true');
+  counter.textContent = `${current + 1} / ${slides.length}`;
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') goTo(current + 1);
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') goTo(current - 1);
+  if (e.key === 'Home') goTo(0);
+  if (e.key === 'End') goTo(slides.length - 1);
+});
+
+document.getElementById('deck').addEventListener('click', e => {
+  const mid = window.innerWidth / 2;
+  if (e.clientX > mid) goTo(current + 1);
+  else goTo(current - 1);
+});
+</script>
+</body>
+</html>

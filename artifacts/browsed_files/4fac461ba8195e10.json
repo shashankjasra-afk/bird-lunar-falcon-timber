@@ -1,0 +1,499 @@
+{
+  "sha": "298b316eb9a5d302811c4182fb9c1ee81a449257",
+  "url": "https://api.github.com/repos/langfuse/skills/git/trees/298b316eb9a5d302811c4182fb9c1ee81a449257",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8339316754a272982422ab0451be6dd2b0488357",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/8339316754a272982422ab0451be6dd2b0488357"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dff5188c8f9ee300a2fdda144764d7fab91fdc10",
+      "size": 508,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/dff5188c8f9ee300a2fdda144764d7fab91fdc10"
+    },
+    {
+      "path": ".codex-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0070355778a366bdddbb3ade33ee125f0f7d625",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/f0070355778a366bdddbb3ade33ee125f0f7d625"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cee6e348aefa3084c667bb19537bfa34843b4c75",
+      "size": 1641,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/cee6e348aefa3084c667bb19537bfa34843b4c75"
+    },
+    {
+      "path": ".cursor-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5296e54d7da6b828c610a86436a3abe8493b10cf",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/5296e54d7da6b828c610a86436a3abe8493b10cf"
+    },
+    {
+      "path": ".cursor-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27aaf4a2fcd8f1e873768efaf5913294248d497b",
+      "size": 626,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/27aaf4a2fcd8f1e873768efaf5913294248d497b"
+    },
+    {
+      "path": ".cursor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73b1971d466cf5789091191bf81edfd6c875b9ad",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/73b1971d466cf5789091191bf81edfd6c875b9ad"
+    },
+    {
+      "path": ".cursor/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8df1505d88cc28254c4affce2e328329ce9c889a",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/8df1505d88cc28254c4affce2e328329ce9c889a"
+    },
+    {
+      "path": ".cursor/skills/skill-creator",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a01fbe3fa7f17f64173bd4fdcfecea86a3fd664c",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/a01fbe3fa7f17f64173bd4fdcfecea86a3fd664c"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+      "size": 11357,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "158979709538a4c0de9c370f567917260e0141b2",
+      "size": 18086,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/158979709538a4c0de9c370f567917260e0141b2"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e0b8f3dd99d5b3112551a387eab669b694e39be1",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/e0b8f3dd99d5b3112551a387eab669b694e39be1"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/references/output-patterns.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "073ddda5f03989b1731ad29b9df7248279e9eef0",
+      "size": 1813,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/073ddda5f03989b1731ad29b9df7248279e9eef0"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/references/workflows.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a350c3cc81367fda7acfea9084aaa13a5d83c054",
+      "size": 818,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/a350c3cc81367fda7acfea9084aaa13a5d83c054"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e710881fe7f3f117b4b852cae048d393405ab1c1",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/e710881fe7f3f117b4b852cae048d393405ab1c1"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/scripts/init_skill.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c544fc725d7224febb8fe4a15e4e66d66d6a1ffd",
+      "size": 10865,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/c544fc725d7224febb8fe4a15e4e66d66d6a1ffd"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/scripts/package_skill.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5cd36cb16e1314f2ab87d50aaedbc9f26925dac1",
+      "size": 3288,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/5cd36cb16e1314f2ab87d50aaedbc9f26925dac1"
+    },
+    {
+      "path": ".cursor/skills/skill-creator/scripts/quick_validate.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ed8e1dddce77b16af13c6f36b3fe86c4ac7c590c",
+      "size": 3972,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/ed8e1dddce77b16af13c6f36b3fe86c4ac7c590c"
+    },
+    {
+      "path": ".env.halo.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7596c7290f30ac6a096cb8425ff7303560d6e611",
+      "size": 100,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/7596c7290f30ac6a096cb8425ff7303560d6e611"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "257c9c52ec530d6a57d4e78cfd52f9933d96731a",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/257c9c52ec530d6a57d4e78cfd52f9933d96731a"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fbe5581186f9ff9f5dc356714d439053c448d43",
+      "size": 92,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/4fbe5581186f9ff9f5dc356714d439053c448d43"
+    },
+    {
+      "path": ".github/DISCUSSION_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a0a63415878cfef46fe2c265dfa505389e5a46b8",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/a0a63415878cfef46fe2c265dfa505389e5a46b8"
+    },
+    {
+      "path": ".github/DISCUSSION_TEMPLATE/ideas-improvements.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "695fff530f7ce92adfb25c6be783cade49dd0699",
+      "size": 290,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/695fff530f7ce92adfb25c6be783cade49dd0699"
+    },
+    {
+      "path": ".github/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c657f483773c44a2979b196f8eb3d7f22d3c7e5",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/9c657f483773c44a2979b196f8eb3d7f22d3c7e5"
+    },
+    {
+      "path": ".github/actions/publish-halo-skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "555faba0054245b93826f3f86e2e54bae427dd0f",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/555faba0054245b93826f3f86e2e54bae427dd0f"
+    },
+    {
+      "path": ".github/actions/publish-halo-skills/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39f584363a46a1788118f0ace95e34c8b59124ed",
+      "size": 2568,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/39f584363a46a1788118f0ace95e34c8b59124ed"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4b37f6a05cf8a6059c0da9f1dea4225964dad77",
+      "size": 265,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/f4b37f6a05cf8a6059c0da9f1dea4225964dad77"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4edd91a5d7d3bf87597761c4b304ba0a349cce36",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/4edd91a5d7d3bf87597761c4b304ba0a349cce36"
+    },
+    {
+      "path": ".github/workflows/sync-halo-skills.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fe91effbcaaa249f31185e5198b1823e6422355",
+      "size": 4270,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/6fe91effbcaaa249f31185e5198b1823e6422355"
+    },
+    {
+      "path": ".github/workflows/zizmor.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a349ee3e4a66df3793c986d574358ce66c1d482",
+      "size": 729,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/7a349ee3e4a66df3793c986d574358ce66c1d482"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cf9c92f7b2c3e71d8b218e00a6fb7baa5dbd3d6",
+      "size": 59,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/5cf9c92f7b2c3e71d8b218e00a6fb7baa5dbd3d6"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2afa3850a75265d60f2f1968e8b2d4dfb9acc970",
+      "size": 6260,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/2afa3850a75265d60f2f1968e8b2d4dfb9acc970"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a0cab4b837998b035fb1ebc5ebe8cdb0c3c2398",
+      "size": 280,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/6a0cab4b837998b035fb1ebc5ebe8cdb0c3c2398"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0da797beb5a35119999243cc9fbde21b508068d8",
+      "size": 7655,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/0da797beb5a35119999243cc9fbde21b508068d8"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "550653a474546ca541c8b50ab3ad0b5cb5ba22a2",
+      "size": 1070,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/550653a474546ca541c8b50ab3ad0b5cb5ba22a2"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18a280574daa62ff33226b0f3b4a22159cf49752",
+      "size": 3070,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/18a280574daa62ff33226b0f3b4a22159cf49752"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3fb2e393e579eab6a53f87060c5d1548279c087",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/b3fb2e393e579eab6a53f87060c5d1548279c087"
+    },
+    {
+      "path": "assets/logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e340137ff80fe8a184a03e29260bc519290785",
+      "size": 14905,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/c7e340137ff80fe8a184a03e29260bc519290785"
+    },
+    {
+      "path": "halo-skill-publishing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bcfcccae76707e09029249d64f8e2b36476c7b40",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/bcfcccae76707e09029249d64f8e2b36476c7b40"
+    },
+    {
+      "path": "halo-skill-publishing/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d2452dbcb0cd03b8ed35f36c6b7db989378f5f0",
+      "size": 3520,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/0d2452dbcb0cd03b8ed35f36c6b7db989378f5f0"
+    },
+    {
+      "path": "halo-skill-publishing/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14b3f35d8f9beefae6fc0bc5e4615bb9a8ad3b08",
+      "size": 1126,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/14b3f35d8f9beefae6fc0bc5e4615bb9a8ad3b08"
+    },
+    {
+      "path": "halo-skill-publishing/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ea3710b0a56ddc49fd11fa2bc2cb87db903fd33",
+      "size": 139,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/0ea3710b0a56ddc49fd11fa2bc2cb87db903fd33"
+    },
+    {
+      "path": "halo-skill-publishing/prepare-halo-skills.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51631d87594e05e9c73a4a42b84bd88a5293cfc8",
+      "size": 2510,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/51631d87594e05e9c73a4a42b84bd88a5293cfc8"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff0ed9f4929f4b6915457f674d7cd8de818b1cf7",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/ff0ed9f4929f4b6915457f674d7cd8de818b1cf7"
+    },
+    {
+      "path": "skills/langfuse",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e328647f773572c449699be03e719e95ab151a6f",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/e328647f773572c449699be03e719e95ab151a6f"
+    },
+    {
+      "path": "skills/langfuse/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "421a044e40b0957df8c77f486054213f039b8b93",
+      "size": 8703,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/421a044e40b0957df8c77f486054213f039b8b93"
+    },
+    {
+      "path": "skills/langfuse/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d6df37243df79760ff84a94aa270a7827193b8b",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/9d6df37243df79760ff84a94aa270a7827193b8b"
+    },
+    {
+      "path": "skills/langfuse/references/ci-cd.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f93749a7fadba71c638261be4fe091a99b89c80c",
+      "size": 2950,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/f93749a7fadba71c638261be4fe091a99b89c80c"
+    },
+    {
+      "path": "skills/langfuse/references/cli.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cc8725683758d5a351fe73460270bde97d137fe",
+      "size": 2156,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/7cc8725683758d5a351fe73460270bde97d137fe"
+    },
+    {
+      "path": "skills/langfuse/references/cost-optimization.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05d52ba3778962d7921413e8db5056cee3b836d4",
+      "size": 930,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/05d52ba3778962d7921413e8db5056cee3b836d4"
+    },
+    {
+      "path": "skills/langfuse/references/create-dataset.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa43a3d6af6adaebf79e4c64fab0c2811f30fd0a",
+      "size": 2454,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/fa43a3d6af6adaebf79e4c64fab0c2811f30fd0a"
+    },
+    {
+      "path": "skills/langfuse/references/error-analysis.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35ddf55e33270787460f49fe795cde2f031c1f24",
+      "size": 4520,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/35ddf55e33270787460f49fe795cde2f031c1f24"
+    },
+    {
+      "path": "skills/langfuse/references/instrumentation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10a7da40abe8d65eb408301662d0f35ef2cce052",
+      "size": 10409,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/10a7da40abe8d65eb408301662d0f35ef2cce052"
+    },
+    {
+      "path": "skills/langfuse/references/judge-calibration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe3cddc644a04719699ed7ab2532e3a07015aeea",
+      "size": 4536,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/fe3cddc644a04719699ed7ab2532e3a07015aeea"
+    },
+    {
+      "path": "skills/langfuse/references/prompt-engineering.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e15a272591c9e677bd436dc460359fe378542215",
+      "size": 2802,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/e15a272591c9e677bd436dc460359fe378542215"
+    },
+    {
+      "path": "skills/langfuse/references/prompt-migration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb6fb0d24bf84fe436e072d422be85d140a63d86",
+      "size": 5151,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/bb6fb0d24bf84fe436e072d422be85d140a63d86"
+    },
+    {
+      "path": "skills/langfuse/references/setting-up-evals.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d93768feecc32741540c87b64ffd3ad44caec884",
+      "size": 3800,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/d93768feecc32741540c87b64ffd3ad44caec884"
+    },
+    {
+      "path": "skills/langfuse/references/skill-feedback.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49ceea01e2577e95aa459fa741ccddaeae9668bd",
+      "size": 2157,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/49ceea01e2577e95aa459fa741ccddaeae9668bd"
+    },
+    {
+      "path": "skills/langfuse/references/user-feedback.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6827e0cac5e1a4211b1f487b569b3169e7bc22e0",
+      "size": 2159,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/6827e0cac5e1a4211b1f487b569b3169e7bc22e0"
+    },
+    {
+      "path": "skills/langfuse/references/v4-project-migration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92c06046ea5ba4b6eb96336eb113aeea70fc5922",
+      "size": 6422,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/92c06046ea5ba4b6eb96336eb113aeea70fc5922"
+    },
+    {
+      "path": "skills/migrate-to-langfuse",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bce02bb6ddb84f5ffd20777adf1610e43910b2a",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/8bce02bb6ddb84f5ffd20777adf1610e43910b2a"
+    },
+    {
+      "path": "skills/migrate-to-langfuse/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f77ffc0b4bc9157988e2eb64e8f0581325d2e80b",
+      "size": 6849,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/f77ffc0b4bc9157988e2eb64e8f0581325d2e80b"
+    },
+    {
+      "path": "skills/migrate-to-langfuse/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e981d07814adcd20ffbfe066edcc7c66107616f",
+      "url": "https://api.github.com/repos/langfuse/skills/git/trees/7e981d07814adcd20ffbfe066edcc7c66107616f"
+    },
+    {
+      "path": "skills/migrate-to-langfuse/references/reingest-history.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f722f9c4cff8b9cc659045a26bae408242a78deb",
+      "size": 4523,
+      "url": "https://api.github.com/repos/langfuse/skills/git/blobs/f722f9c4cff8b9cc659045a26bae408242a78deb"
+    }
+  ],
+  "truncated": false
+}

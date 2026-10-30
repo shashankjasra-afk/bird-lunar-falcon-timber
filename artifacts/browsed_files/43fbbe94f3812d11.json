@@ -1,0 +1,34 @@
+[
+  {
+    "name": "langfuse",
+    "path": "skills/langfuse",
+    "sha": "e328647f773572c449699be03e719e95ab151a6f",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/skills/langfuse?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/skills/langfuse",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/e328647f773572c449699be03e719e95ab151a6f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/skills/langfuse?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/e328647f773572c449699be03e719e95ab151a6f",
+      "html": "https://github.com/langfuse/skills/tree/main/skills/langfuse"
+    }
+  },
+  {
+    "name": "migrate-to-langfuse",
+    "path": "skills/migrate-to-langfuse",
+    "sha": "8bce02bb6ddb84f5ffd20777adf1610e43910b2a",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/skills/migrate-to-langfuse?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/skills/migrate-to-langfuse",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/8bce02bb6ddb84f5ffd20777adf1610e43910b2a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/skills/migrate-to-langfuse?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/8bce02bb6ddb84f5ffd20777adf1610e43910b2a",
+      "html": "https://github.com/langfuse/skills/tree/main/skills/migrate-to-langfuse"
+    }
+  }
+]

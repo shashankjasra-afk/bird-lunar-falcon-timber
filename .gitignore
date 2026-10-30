@@ -1,0 +1,5 @@
+.env.langfuse
+node_modules
+.nitro
+.vercel
+dist

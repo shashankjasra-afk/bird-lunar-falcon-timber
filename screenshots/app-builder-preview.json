@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "DealFlow",
+      "hasCanvas": false,
+      "bodyTextLen": 3139,
+      "bodyTextHash": "f0a23358bc6b80d8fbfc707a0fdaf043c195aab255f56e83c27d3d2fba982c5a",
+      "bodyTextPrefix": "HELIO QUOTE DealFlow Three agents own the approval hop. They rea",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "DealFlow",
+      "hasCanvas": false,
+      "bodyTextLen": 1868,
+      "bodyTextHash": "66c4a1d16e3f77083ccf2059c907aac69d5f0b7f7a0cdd80079adb9c2ae1b091",
+      "bodyTextPrefix": "HELIO QUOTE DealFlow Three agents own the approval hop. They rea",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "name": ".claude-plugin",
+    "path": ".claude-plugin",
+    "sha": "8339316754a272982422ab0451be6dd2b0488357",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/.claude-plugin?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/.claude-plugin",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/8339316754a272982422ab0451be6dd2b0488357",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/.claude-plugin?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/8339316754a272982422ab0451be6dd2b0488357",
+      "html": "https://github.com/langfuse/skills/tree/main/.claude-plugin"
+    }
+  },
+  {
+    "name": ".codex-plugin",
+    "path": ".codex-plugin",
+    "sha": "f0070355778a366bdddbb3ade33ee125f0f7d625",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/.codex-plugin?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/.codex-plugin",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/f0070355778a366bdddbb3ade33ee125f0f7d625",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/.codex-plugin?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/f0070355778a366bdddbb3ade33ee125f0f7d625",
+      "html": "https://github.com/langfuse/skills/tree/main/.codex-plugin"
+    }
+  },
+  {
+    "name": ".cursor-plugin",
+    "path": ".cursor-plugin",
+    "sha": "5296e54d7da6b828c610a86436a3abe8493b10cf",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/.cursor-plugin?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/.cursor-plugin",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/5296e54d7da6b828c610a86436a3abe8493b10cf",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/.cursor-plugin?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/5296e54d7da6b828c610a86436a3abe8493b10cf",
+      "html": "https://github.com/langfuse/skills/tree/main/.cursor-plugin"
+    }
+  },
+  {
+    "name": ".cursor",
+    "path": ".cursor",
+    "sha": "73b1971d466cf5789091191bf81edfd6c875b9ad",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/.cursor?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/.cursor",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/73b1971d466cf5789091191bf81edfd6c875b9ad",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/.cursor?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/73b1971d466cf5789091191bf81edfd6c875b9ad",
+      "html": "https://github.com/langfuse/skills/tree/main/.cursor"
+    }
+  },
+  {
+    "name": ".env.halo.example",
+    "path": ".env.halo.example",
+    "sha": "7596c7290f30ac6a096cb8425ff7303560d6e611",
+    "size": 100,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/.env.halo.example?ref=main",
+    "html_url": "https://github.com/langfuse/skills/blob/main/.env.halo.example",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/blobs/7596c7290f30ac6a096cb8425ff7303560d6e611",
+    "download_url": "https://raw.githubusercontent.com/langfuse/skills/main/.env.halo.example",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/.env.halo.example?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/blobs/7596c7290f30ac6a096cb8425ff7303560d6e611",
+      "html": "https://github.com/langfuse/skills/blob/main/.env.halo.example"
+    }
+  },
+  {
+    "name": ".github",
+    "path": ".github",
+    "sha": "257c9c52ec530d6a57d4e78cfd52f9933d96731a",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/.github?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/.github",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/257c9c52ec530d6a57d4e78cfd52f9933d96731a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/.github?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/257c9c52ec530d6a57d4e78cfd52f9933d96731a",
+      "html": "https://github.com/langfuse/skills/tree/main/.github"
+    }
+  },
+  {
+    "name": ".gitignore",
+    "path": ".gitignore",
+    "sha": "5cf9c92f7b2c3e71d8b218e00a6fb7baa5dbd3d6",
+    "size": 59,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/.gitignore?ref=main",
+    "html_url": "https://github.com/langfuse/skills/blob/main/.gitignore",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/blobs/5cf9c92f7b2c3e71d8b218e00a6fb7baa5dbd3d6",
+    "download_url": "https://raw.githubusercontent.com/langfuse/skills/main/.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/.gitignore?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/blobs/5cf9c92f7b2c3e71d8b218e00a6fb7baa5dbd3d6",
+      "html": "https://github.com/langfuse/skills/blob/main/.gitignore"
+    }
+  },
+  {
+    "name": "AGENTS.md",
+    "path": "AGENTS.md",
+    "sha": "2afa3850a75265d60f2f1968e8b2d4dfb9acc970",
+    "size": 6260,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/AGENTS.md?ref=main",
+    "html_url": "https://github.com/langfuse/skills/blob/main/AGENTS.md",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/blobs/2afa3850a75265d60f2f1968e8b2d4dfb9acc970",
+    "download_url": "https://raw.githubusercontent.com/langfuse/skills/main/AGENTS.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/AGENTS.md?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/blobs/2afa3850a75265d60f2f1968e8b2d4dfb9acc970",
+      "html": "https://github.com/langfuse/skills/blob/main/AGENTS.md"
+    }
+  },
+  {
+    "name": "CLAUDE.md",
+    "path": "CLAUDE.md",
+    "sha": "6a0cab4b837998b035fb1ebc5ebe8cdb0c3c2398",
+    "size": 280,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/CLAUDE.md?ref=main",
+    "html_url": "https://github.com/langfuse/skills/blob/main/CLAUDE.md",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/blobs/6a0cab4b837998b035fb1ebc5ebe8cdb0c3c2398",
+    "download_url": "https://raw.githubusercontent.com/langfuse/skills/main/CLAUDE.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/CLAUDE.md?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/blobs/6a0cab4b837998b035fb1ebc5ebe8cdb0c3c2398",
+      "html": "https://github.com/langfuse/skills/blob/main/CLAUDE.md"
+    }
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "path": "CONTRIBUTING.md",
+    "sha": "0da797beb5a35119999243cc9fbde21b508068d8",
+    "size": 7655,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/CONTRIBUTING.md?ref=main",
+    "html_url": "https://github.com/langfuse/skills/blob/main/CONTRIBUTING.md",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/blobs/0da797beb5a35119999243cc9fbde21b508068d8",
+    "download_url": "https://raw.githubusercontent.com/langfuse/skills/main/CONTRIBUTING.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/CONTRIBUTING.md?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/blobs/0da797beb5a35119999243cc9fbde21b508068d8",
+      "html": "https://github.com/langfuse/skills/blob/main/CONTRIBUTING.md"
+    }
+  },
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "550653a474546ca541c8b50ab3ad0b5cb5ba22a2",
+    "size": 1070,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/LICENSE?ref=main",
+    "html_url": "https://github.com/langfuse/skills/blob/main/LICENSE",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/blobs/550653a474546ca541c8b50ab3ad0b5cb5ba22a2",
+    "download_url": "https://raw.githubusercontent.com/langfuse/skills/main/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/LICENSE?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/blobs/550653a474546ca541c8b50ab3ad0b5cb5ba22a2",
+      "html": "https://github.com/langfuse/skills/blob/main/LICENSE"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "18a280574daa62ff33226b0f3b4a22159cf49752",
+    "size": 3070,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/README.md?ref=main",
+    "html_url": "https://github.com/langfuse/skills/blob/main/README.md",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/blobs/18a280574daa62ff33226b0f3b4a22159cf49752",
+    "download_url": "https://raw.githubusercontent.com/langfuse/skills/main/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/README.md?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/blobs/18a280574daa62ff33226b0f3b4a22159cf49752",
+      "html": "https://github.com/langfuse/skills/blob/main/README.md"
+    }
+  },
+  {
+    "name": "assets",
+    "path": "assets",
+    "sha": "b3fb2e393e579eab6a53f87060c5d1548279c087",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/assets?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/assets",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/b3fb2e393e579eab6a53f87060c5d1548279c087",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/assets?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/b3fb2e393e579eab6a53f87060c5d1548279c087",
+      "html": "https://github.com/langfuse/skills/tree/main/assets"
+    }
+  },
+  {
+    "name": "halo-skill-publishing",
+    "path": "halo-skill-publishing",
+    "sha": "bcfcccae76707e09029249d64f8e2b36476c7b40",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/halo-skill-publishing?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/halo-skill-publishing",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/bcfcccae76707e09029249d64f8e2b36476c7b40",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/halo-skill-publishing?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/bcfcccae76707e09029249d64f8e2b36476c7b40",
+      "html": "https://github.com/langfuse/skills/tree/main/halo-skill-publishing"
+    }
+  },
+  {
+    "name": "skills",
+    "path": "skills",
+    "sha": "ff0ed9f4929f4b6915457f674d7cd8de818b1cf7",
+    "size": 0,
+    "url": "https://api.github.com/repos/langfuse/skills/contents/skills?ref=main",
+    "html_url": "https://github.com/langfuse/skills/tree/main/skills",
+    "git_url": "https://api.github.com/repos/langfuse/skills/git/trees/ff0ed9f4929f4b6915457f674d7cd8de818b1cf7",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/langfuse/skills/contents/skills?ref=main",
+      "git": "https://api.github.com/repos/langfuse/skills/git/trees/ff0ed9f4929f4b6915457f674d7cd8de818b1cf7",
+      "html": "https://github.com/langfuse/skills/tree/main/skills"
+    }
+  }
+]
